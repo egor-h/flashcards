@@ -1,0 +1,12 @@
+.createFlashCards {
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.frontFlashCards, .backFlashCards{
+
+    width: 20%;
+}
+.helpFlashCards {
+    width: 100%;
+}

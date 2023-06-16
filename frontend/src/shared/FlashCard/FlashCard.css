@@ -1,0 +1,16 @@
+.flashCard {
+    margin: 20px 0 0 2%;
+    width: 20%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(56,154,209);
+    background: linear-gradient(90deg, rgba(56,154,209,1) 0%, rgba(197,21,158,1) 43%, rgba(198,255,0,1) 100%);
+    border-radius: 12px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    overflow: hidden;
+}
+

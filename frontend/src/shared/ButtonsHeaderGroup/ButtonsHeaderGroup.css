@@ -1,0 +1,42 @@
+.notificationContainer {
+    width: 40px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plusSvg {
+    border: 1px solid cornflowerblue;
+    border-radius: 50%;
+    background: midnightblue;
+    color: white;
+}
+
+
+.notificationSvg {
+    width: 24px;
+    height: 24px;
+}
+
+.userIcon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid cornflowerblue;
+    border-radius: 50%;
+    background: midnightblue;
+    color: white;
+    font-size: 20px;
+}
+
+.subscribeButton {
+    width: 280px;
+    height: 40px;
+    border: 1px solid darkorange;
+    border-radius: 12px;
+    background-color: sandybrown;
+    font-size: 16px;
+    color: midnightblue;
+}
