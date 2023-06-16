@@ -1,0 +1,11 @@
+.registrationForm {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.userData {
+    margin: 0 0 10px 0;
+    width: 60%;
+}
