@@ -6,12 +6,14 @@
 .pnp.js
 /server
 /server/node_modules
+../.idea
 # testing
 /coverage
 /Техническое задание.txt
 /server/.env
 # production
 /build
+.gitignore
 
 # misc
 .DS_Store
