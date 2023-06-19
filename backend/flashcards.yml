@@ -1,0 +1,33 @@
+version: '3.1'
+services:
+  db:
+    image: postgres:15.3-bookworm
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: 12345
+      POSTGRES_DB: flashcards
+    ports:
+      - 5432:5432
+
+  liquibase:
+    image: liquibase/liquibase
+    volumes:
+      - ./migrations:/liquibase/changelog
+    command: bash -c "lpm add postgresql && liquibase --defaultsFile=changelog/liquibase.properties update"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  backend:
+    depends_on:
+      liquibase:
+        condition: service_completed_successfully
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_LISTEN_PORT: 8089
+      PGADMIN_DEFAULT_EMAIL: test@test.net
+      PGADMIN_DEFAULT_PASSWORD: 123
+    ports:
+      - 8089:8089
