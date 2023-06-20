@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://db:5432/flashcards
+    username: user
+    password: 12345
+
+springdoc:
+  api-docs:
+    path: /swagger-ui.html
