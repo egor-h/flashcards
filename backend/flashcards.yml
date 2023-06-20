@@ -18,7 +18,7 @@ services:
     image: liquibase/liquibase
     volumes:
       - ./migrations:/liquibase/changelog
-    command: bash -c "lpm add postgresql && liquibase --defaultsFile=changelog/liquibase.properties update"
+    command: bash -c "liquibase --defaultsFile=changelog/liquibase.properties update"
     depends_on:
       db:
         condition: service_healthy
